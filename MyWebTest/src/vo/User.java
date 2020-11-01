@@ -8,6 +8,8 @@ public class User {
 	private String mail;
 	private String povi;
 	private String city;	
+	private String povicode;
+	private String citycode;
 
 	public String getUserName() {
 		return userName;
@@ -51,12 +53,25 @@ public class User {
 	public void setCity(String city) {
 		this.city = city;
 	}
-
+	
+	public String getPoviCode() {
+		return povicode;
+	}
+	public void setPoviCode(String poviCode) {
+		this.povicode = povicode;
+	}
+	public String getCityCode() {
+		return citycode;
+	}
+	public void setCityCode(String cityCode) {
+		this.city = city;
+	}
 	@Override
 	public String toString() {
 		return "User [userName=" + userName + ", password=" + password + ", chrName=" + chrName + ", role=" + role
 				+ ", mail=" + mail + ", povi=" + povi + ", city=" + city + "]";
 	}
+
 	
  
 	
